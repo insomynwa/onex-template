@@ -53,7 +53,7 @@ class Onex_Page_Template{
 					'katdel' => $wpdb
 					                ->get_results(
 										$wpdb->prepare(
-											"SELECT kd.id_kat_del, kd.kategori, t.nama_template FROM $this->katdel_table_name kd
+											"SELECT kd.id_katdel, kd.nama_katdel, t.nama_template FROM $this->katdel_table_name kd
 											 LEFT JOIN $this->template_table_name t
 											 ON kd.template_id=t.id_template",
 											 null
@@ -74,8 +74,8 @@ class Onex_Page_Template{
 		switch( $type){
 			case 'kd':
 				$target_table_name = $this->katdel_table_name;
-				$target_id_field_name = "id_kat_del";
-				$target_name_field_name = "kategori";
+				$target_id_field_name = "id_katdel";
+				$target_name_field_name = "nama_katdel";
 				break;
 		}
 
@@ -107,7 +107,7 @@ class Onex_Page_Template{
 		switch( $type){
 			case 'kd':
 				$target_table_name = $this->katdel_table_name;
-				$target_id_field_name = "id_kat_del";
+				$target_id_field_name = "id_katdel";
 				break;
 		}
 

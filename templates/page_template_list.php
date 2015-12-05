@@ -37,10 +37,10 @@
 				<?php foreach($attributes['target_page']['katdel'] as $katdel ): ?>
 					<tr>
 						<td><?php echo $nmr; ?></td>
-						<td><?php echo $katdel->kategori; ?></td>
+						<td><?php echo $katdel->nama_katdel; ?></td>
 						<td><?php echo $katdel->nama_template; ?></td>
 						<td>
-							<a href='<?php echo admin_url('admin.php?page=onex-target-page-template-update&type=kd&id='. $katdel->id_kat_del); ?>'>Update</a>
+							<a href='<?php echo admin_url('admin.php?page=onex-target-page-template-update&type=kd&id='. $katdel->id_katdel); ?>'>Update</a>
 						</td>
 					</tr>
 					<?php $nmr += 1; ?>
