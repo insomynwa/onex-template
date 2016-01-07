@@ -68,6 +68,7 @@ class Onex_Template_Setting_Plugin{
 	}
 
 	function RenderPageTemplateTambah(){
+
 		return $this->getHtmlTemplate(  'templates/', 'page_template_tambah', $attributes);
 	}
 
@@ -96,8 +97,10 @@ class Onex_Template_Setting_Plugin{
 }
 
 function onex_get_page_template(){
-	$onex_page_template_obj = new Onex_Page_template();
-	$content = $onex_page_template_obj->GetPageTemplate();
+	if(is_user_logged_in()){
+		$onex_page_template_obj = new Onex_Page_template();
+		$content = $onex_page_template_obj->GetPageTemplate();
+	}
 	return $content;
 }
 
