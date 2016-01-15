@@ -1,9 +1,8 @@
 <?php
 /**
 *
-* Plugin Name: One Express Template Setting
+* Plugin Name: Otw-Express Page Template Setting
 * Version: 1.0
-* Author: Hamba Allah
 *
 */
 ?>
@@ -25,8 +24,8 @@ class Onex_Template_Setting_Plugin{
 
 	function createMenu(){
 		add_menu_page(
-			'One Express Page Template',
-			'One Express Page Template',
+			'Otw-Express Page Template',
+			'Otw-Express Page Template',
 			'manage_options',
 			'onex-page-template',
 			array( $this, 'RenderPageTemplate')

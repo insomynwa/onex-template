@@ -2,7 +2,7 @@
 	<p>
 		<h2>Page Template</h2>
 		<a href="<?php echo admin_url('admin.php?page=onex-page-template-tambah'); ?>">Tambah</a>
-		<table>
+		<table class="table table-responsive">
 			<tr><th>No</th>
 				<th>Template</th>
 				<th></th>
@@ -25,7 +25,7 @@
 	</p>
 	<p>
 		<h2>Jenis Delivery</h2>
-		<table>
+		<table class="table table-responsive">
 			<tr><th>No</th>
 				<th>Jenis Delivery</th>
 				<th>Template</th>
